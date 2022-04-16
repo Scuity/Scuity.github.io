@@ -1,0 +1,45 @@
+
+body {
+    padding-top: 10em; /*空上半边11em*/ 
+    /*所有字体颜色和背景颜色*/
+    text-align: center;
+    color:rgb(223, 86, 55);
+    background-color:peachpuff  
+}
+
+h1{
+    font-size: 50px;
+    color: rgb(158, 52, 28);
+}
+
+h3{
+    font-size: 40px;
+    color: rgb(158, 52, 28);
+    background-color:rgb(224, 174, 127);
+    outline: none;
+    border-width: 0px;
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    border-width: 0px;
+    background-color: beige;
+    outline: none;
+    color: rgb(223, 86, 55);
+    font-size: 15px;
+    cursor: pointer
+}
+button:hover{
+    background: rgb(224, 174, 127);
+}
+
+address {
+    /*正文和底部增加虚线*/
+    color: rgba(223, 86, 55, 0.642);
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted 
+}
+
+
