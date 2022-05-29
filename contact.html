@@ -1,0 +1,158 @@
+<html>
+    <head>
+      <title>FengFeng Official Website</title>
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="work.css">
+      <script  src="work.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+    </head>
+
+    <body>
+        
+        <!-- logo -->
+        <div class="news-logo fixed-top">  
+        <img class="move" src="pc/logo.png">
+        </div>
+        
+        <!-- 导航栏 -->
+        <div class="none fixed-top"></div>
+        <div class="daohang fixed-top">
+            <nav class="navbar justify-content-end fixed-top"><!-- 右对齐 -->
+                <ul class="nav">
+                <div class="nav-move">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="index.html">TOPS</a>
+                    </li>
+                </div>
+
+                <div class="nav-move">
+                    <li class="nav-item">
+                    <a class="nav-link" href="news.html">NEWS</a>
+                    </li>
+                </div>
+
+                <div class="nav-move">
+                    <li class="nav-item">
+                    <a class="nav-link" href="biography.html">BIOGRAPHY</a>
+                    </li>
+                </div>
+
+                <div class="nav-move">
+                    <li class="nav-item">
+                    <a class="nav-link" href="more.html">MORE</a>
+                    </li>
+                </div>
+
+                <div class="nav-move">
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </div>
+                        
+                <div class="nav-move">
+                    <li class="nav-item">
+                    <a class="nav-link" href="others.html">OTHERS</a>
+                    </li>
+                </div>
+                </ul>
+            </nav>
+        </div>
+
+        <!--contact-->
+        <div class="all-contact">
+            <img class="contact-img" src="pc/contact.svg">
+            <div class="enter-text">
+                <div class="inquiry-details" required>
+                    <h4 class="id-title">咨询内容</h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          活动讯息
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          商业合作
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            媒体报道
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault4">
+                            其他
+                        </label>
+                      </div>
+                </div>
+                <div class="enter-name col-md-4" >
+                    <label for="exampleFormControlInput1" class="form-label">姓名/昵称</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="FengFeng" required>
+                </div>
+                
+                <div class="enter-email mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">邮箱</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="FengFeng@123.com" required>
+                </div>
+                <div class="enter-subject mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">主题</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="" >
+                </div>
+                <div class="enter-detail mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">详情</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class = "con-intro">
+            <p>
+                我们会严格遵守保护个人信息的相关法律及其他相关法规，妥善您的保管个人信息。<br><br>
+                同时我们也会一直关注您给予我们的意见与反馈，但我们不承诺回复或回应每个人的询问。<br>
+                
+                感谢您的支持与理解。<br>
+            </p>
+        </div>
+        
+        <!-- Button trigger modal -->
+        <div class="send-center">
+            <button type="submit" class="con-send btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                SEND
+            </button>
+        </div>
+       
+  
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    因为不会写后台的数据TT所以现在点了也是没有用的<br>
+                    总之常理来说点了这个就代表你发送成功啦~
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn-con-close btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn-understood btn-primary" data-bs-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- 底部版权 -->
+        <div class="bottom-inc-con">
+            <h6 class="inc">© FengFeng,TEAM 2-ES</h6>
+        </div>
+    </body>
+
+</html>
