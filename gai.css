@@ -13,7 +13,6 @@ html{
 
 /*------导航栏---------------------------------------*/
 
-
 .none{
     position: fixed;
     background-color: rgb(255, 255, 255);
@@ -49,19 +48,19 @@ a{
 .kai{
     position:fixed;
     z-index: 999;
-    left:70%;
+    left:80%;
     top: 1em;
-    height:2em;
-    width:2em;
+    height:1.5em;
+    width:1.5em;
     border: none;
     border-radius: 0.3em;
     font-size: 2em;
     font-weight: 1000;
-    color: brown;
+    color: white;
     display: none;
     transition: 0.5s;
     margin: 0 auto;
-    background-color: rgb(255, 255, 255);
+    background-color: brown;
     
 }
 
@@ -101,6 +100,65 @@ a{
     
     
     }
+/*------logo-------*/
+.top-logo img 
+{
+    position:fixed;
+    width: 40% /*图片缩放*/
+}
+
+@media screen and (max-width:1200px){
+    .top-logo img 
+    {
+    position:fixed;
+    width: 15em;
+    padding-top: 1.5em;
+    
+    }
+}
+/*------视频-------*/
+
+.beijing
+{  
+    top:50%;
+    
+} 
+video{    
+
+    min-width: 95%;  
+    min-height: 95%; 
+    width: 100%; 
+    z-index:1;
+    
+}  
+source/*源文件*/
+{  
+    min-width: 95%;  
+    min-height: 95%;  
+    height: auto;  
+    width: auto;  
+}
+ /*底部版权色*/
+  .bottom-inc{
+    
+      position: relative;
+      background-color: brown;
+      color: white;
+      bottom: 21%;
+      height:30%;
+      box-shadow: 10em 0 25em 5em rgba(227, 52, 52, 0.544);
+      z-index: -1;
+  }
+  .inc{
+      font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+      letter-spacing:0.2em;
+      position: relative;
+      text-align: center;
+      font-size: smaller;
+      top: 7.5em;
+  }
+
+
 /*------logo-------------------------------------------*/
 .top-logo img 
 {
