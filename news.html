@@ -1,7 +1,7 @@
 <html>
   <head>
       <title>FengFeng Official Website</title>
-      meta charset="UTF-8">
+      <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Bootstrap -->
@@ -27,8 +27,11 @@
             width: 1000px;
             height: 80px;
             position: relative;
+            justify-content: center;
             margin: 0px auto;
+            
         }
+       
         .swiper .swiperItem {
             width: 1000px;
             height: 600px;
@@ -111,6 +114,8 @@
         .points a:hover{
             background-color: brown;
         }
+
+        
       </style>
     </head>
 
@@ -171,6 +176,7 @@
     </div>
 
     <!-- 轮播图 -->
+    
     <div id="swiper">
       <div class="swiper">
           <div class="swiperItem b">
@@ -200,53 +206,71 @@
 
 
     <!-- news内容 -->
-    <div>
-      <div class="news-text wow fadeInUp">
-        <button class="days" type="button">2022.05.28</button>
-        <img class="news-pic" src="pc/stickers.png">
-        <button class="neirong" type="button" onclick="stickers()">凤凤日常系列表情包第一弹将于5月32日上架微信表情</button>
-        
+      <div class="small-news">
+        <div class="news-text wow fadeInUp">
+          <button class="days" type="button">2022.05.28</button>
+          <img class="news-pic" src="pc/stickers.png">
+          <a class="dd"><button class="neirong" type="button" onclick="stickers()">凤凤日常系列表情包第一弹将于5月32日上架微信表情</button></a>
+        </div>
+        <br>
+        <br>
       </div>
-      <br>
-      <br>
+
+      <div>
+        <div class="news-text wow fadeInUp">
+          <button class="days" type="button">2022.05.23</button>
+          <img class="news-pic" src="pc/3d.png">
+          <button class="neirong" type="button" onclick="jianmo()">凤凤3D建模制作中</button>
+          
+        </div>
+        <br>
+        <br>
+      </div>
+
+      <div>
+        <div class="news-text wow fadeInUp">
+          <button class="days" type="button">2022.05.20</button>
+          <img class="news-pic" src="pc/liandong.png">
+          <button class="neirong" type="button" onclick="liandong()">GU x FENG 联动企划《马猴烧酒咕咕子》制作中</button>
+          
+        </div>
+        <br>
+        <br>
+      </div>
+
+      <div>
+        <div class="news-text wow fadeInUp">
+          <button class="days" type="button">2022.05.12</button>
+          <img class="news-pic" src="pc/61live.png">
+          <button class="neirong" type="button" onclick="live61()">儿童节限定服饰即将公开</button>
+          
+        </div>
+        <br>
+        <br>
+      </div>
     </div>
 
-    <div>
-      <div class="news-text wow fadeInUp">
-        <button class="days" type="button">2022.05.23</button>
-        <img class="news-pic" src="pc/3d.png">
-        <button class="neirong" type="button" onclick="jianmo()">凤凤3D建模制作中</button>
-        
-      </div>
-      <br>
-      <br>
+    <div class="butt">
+      <nav aria-label="Page navigation example">
+        <div class="isssd">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#"><</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">></a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
-    <div>
-      <div class="news-text wow fadeInUp">
-        <button class="days" type="button">2022.05.20</button>
-        <img class="news-pic" src="pc/liandong.png">
-        <button class="neirong" type="button" onclick="liandong()">GU x FENG 联动企划《马猴烧酒咕咕子》制作中</button>
-        
-      </div>
-      <br>
-      <br>
-    </div>
-
-    <div>
-      <div class="news-text wow fadeInUp">
-        <button class="days" type="button">2022.05.12</button>
-        <img class="news-pic" src="pc/61live.png">
-        <button class="neirong" type="button" onclick="live61()">儿童节限定服饰即将公开</button>
-        
-      </div>
-      <br>
-      <br>
-    </div>
+    
 
     <!-- 底部版权 -->
     <div class="bottom-inc">
+      
       <h6 class="inc">© FengFeng,TEAM 2-ES</h6>
+    
+      
     </div>
 
     <script>

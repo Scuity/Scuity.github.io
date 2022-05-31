@@ -1,0 +1,689 @@
+@font-face {
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    src: url('pc/ZhanKuKuaiLeTi2016XiuDingBan-1.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ZhanKuKuHei-1';
+    src: url('pc/ZhanKuKuHei-1.ttf') format('truetype');
+}
+
+html{
+    overflow-x: hidden;
+}
+
+/*------导航栏---------------------------------------*/
+.none{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height:7em;
+    box-shadow: 0 0 10px 5px #fff;
+    z-index: 2;
+}
+ul.nav{
+    margin-right:7em ;
+    margin-top: 1.8em;
+}
+a{
+    margin-right: 1em;
+}
+.nav-link/*导航栏文字*/
+{   
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    color:brown;
+}
+.nav-link:hover/*悬停文字*/
+{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    color: brown;
+}
+.nav-move{/*悬停*/
+    position: relative;
+    transition:All 0.4s ease-in-out;
+}
+.nav-move:hover{
+    transform: translate(0,-10px);
+}
+
+.kai{
+    position:fixed;
+    z-index: 999;
+    left:85%;
+    top: 35px;
+    height: 40px;
+    width:40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    display: none;
+    transition: 0.5s;
+    background-color: brown;
+    
+}
+
+@media screen and (max-width:1100px) {
+    ul.nav{
+        background-color: rgba(255, 255, 255, 0.658);
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.658);
+        height: auto;
+        width: 1000px;
+        margin: 0 auto;
+        top: 102px;
+        left: 0;
+        text-align: center;
+        position: relative;
+        justify-content: center;
+        transform: translatey(-150%);
+        transition:0.4s ease-in-out;
+    }
+    .nav.open {
+        transform: translateX(0);
+        transition:0.4s ease-in-out;
+    }
+    a{
+        margin-right: 0em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        transition:0.4s ease-in-out;
+    }
+    ul.nav{
+        display: block;
+        margin-right: 0em;
+        margin-top: 0em;
+    }
+    .kai{
+        display: block;
+    }
+    }
+/*------logo-------------------------------------------*/
+.news-logo img 
+{
+    position:relative;
+    left: 2em;
+    top: 0.5em;
+    width: 20%;
+    height: auto;
+   
+}
+@media screen and (max-width:1200px){
+    .news-logo img 
+    {
+    position:fixed;
+    width: 200px;
+    padding-top: 0.5em;
+    }
+}
+
+ /*--------contact-------------------------------------------*/
+ .all-contact{
+    padding-top: 12em;
+}
+
+.contact-img{
+    position: relative;
+    z-index: -1;
+    bottom: 4em;
+    left:8%;
+    width: 43%;
+    height: auto;
+    min-width: 370px;
+    min-height: auto;
+}
+@media screen and (max-width:1200px){
+        .enter-text{
+            position: relative;
+            width: 80%;
+            min-height: auto;
+        }
+}
+.enter-text{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    max-width: 1100px;
+    max-height: 690px;
+    bottom:8em;
+    margin: 0 auto;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 15px 20px 5px rgb(255, 191, 191);
+}
+
+.from-check{
+    position: relative;
+    padding-left: 7%;
+}
+.id-title{
+    font-size: 25px;
+}
+
+.inquiry-details{
+    top:0.5em;
+    position: relative;
+    padding-left: 6.2em;
+    padding-top:3em;
+    padding-bottom: 10px;
+}
+.enter-name,.enter-email
+{
+    font-size: 25px;
+    width: 30em;
+    padding-left: 4em;
+    padding-top:0.5em; 
+}
+.enter-subject{
+    font-size: 25px;
+    width: 30em;
+    padding-left: 4em;
+    bottom:0.5em;
+}
+.enter-detail{
+    font-size: 25px;
+    width: 40em;
+    bottom:1em;
+    height: auto;
+    padding-left: 4em;
+    padding-top:0.5em;
+    padding-bottom: 7%;   
+    
+}
+@media screen and (max-width:1200px){
+            .enter-text{
+                position: relative;
+                bottom:6.5em;
+            }
+            .enter-name,.enter-email,.enter-subject,.enter-detail{
+                width: 80%;
+                min-height: auto;
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .id-title{
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .inquiry-details{
+                font-size: 95%;
+            }
+}
+@media screen and (max-width:700px){
+    .enter-text{
+                position: relative;
+                bottom:6em;
+            }
+            .enter-name,.enter-email,.enter-subject,.enter-detail{
+                width: 80%;
+                min-height: auto;
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .id-title{
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .inquiry-details{
+                font-size: 95%;
+            }
+            .enter-name,.enter-email,.enter-subject,.enter-detail{
+                position: relative;
+                padding-left: 10%;
+                padding-top:2%;
+            }
+            .inquiry-details{
+                position: relative;
+                padding-left: 10%;
+                padding-top:8%;
+            }
+}
+
+.form-control{
+    background-color: rgba(219, 219, 219, 0.66);
+    border: none;
+    color: rgba(0, 0, 0, 0.718);
+}
+.form-control placeholder{
+    background-color: rgba(219, 219, 219, 0.66);
+    border: none;
+    color: rgba(165, 165, 165, 0.718);
+}
+.form-control:focus{
+    background-color: rgba(255, 255, 255, 0.66);
+    border: none;
+    box-shadow: 0 0px 2px 3px rgb(227, 52, 52);
+    color: rgba(0, 0, 0, 0.718);
+}
+
+.con-intro{
+    position: relative;
+    bottom: 3em;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: brown;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    text-align: center;
+}
+/*-----------------send-----------------------*/
+.send-center{
+    text-align: center;
+    position: relative;
+    bottom: 1em;
+}
+.con-send,.con-send:focus{
+    position: relative;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: rgb(227, 52, 52);
+    box-shadow: 0 15px 20px 5px rgb(255, 191, 191);
+    width: 8em;
+    height: 2em;
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+}
+.con-send:hover{
+    position: relative;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: rgb(227, 52, 52);
+    box-shadow: 0 8px 8px 2px rgb(255, 191, 191);
+    width: 8em;
+    height: 2em;
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+}
+/*-----------------跳转send----------------------*/
+.btn-understood{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    width: 8em;
+    height: 2em;
+    background-color: rgb(227, 52, 52);
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+    border: none;
+}
+.btn-understood:hover{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    width: 8em;
+    height: 2em;
+    background-color: brown;
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+    border: none;
+}
+.btn-con-close{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    width: 5em;
+    height: 2em;
+    background-color: rgb(153, 153, 153);
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+    border: none;
+}
+.btn-con-close:hover{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    width: 5em;
+    height: 2em;
+    background-color: rgb(112, 112, 112);
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+    border: none;
+}
+.modal-body{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1'
+}
+
+.form-check-input:checked{
+    background-color: rgb(227, 52, 52);
+    border: none;
+}
+.form-check-input:focus{
+    background-color: rgb(227, 52, 52);
+    border: none;
+    box-shadow: 0 0px 0px 3px rgb(255, 191, 191);
+}
+.form-check-input:checked{
+    background-color: rgb(227, 52, 52);
+    border: none;
+}
+.form-check-input:focus{
+    background-color: rgb(227, 52, 52);
+    border: none;
+    box-shadow: 0 0px 0px 3px rgb(255, 191, 191);
+}
+/*-----------------版权-----------------------*/
+.bottom-inc-con{
+    position: relative;
+    background-color: brown;
+    color: white;
+    height:15em;
+    top:8em;
+    box-shadow: 10px 0 25px 5px rgba(227, 52, 52, 0.544);
+}
+.inc{
+    letter-spacing:1px;
+    position: relative;
+    text-align: center;
+    font-size: smaller;
+    top: 7.5em;
+}
+
+/*------------------返回顶部--------------------*/
+.ttop{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    position: relative;
+    height: 70px;
+    width: 70px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    left: 88%;
+    top:1em;
+    color: brown;
+    background-color: white;
+}
+@media screen and (max-width:700px){
+    .ttop{
+        left: 80%;
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.ttop-more{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    position: relative;
+    height: 70px;
+    width: 70px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    left: 88%;
+    top:1em;
+    color: white;
+    background-color: brown;
+}
+@media screen and (max-width:700px){
+    .ttop-more{
+        left: 88%;
+        height: 60px;
+        width: 60px;
+    }
+}
+
+/*------------------more-------------------*/
+
+.wrap{
+    
+    max-width: 1200px;
+    max-height: auto;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+.link-right{
+    content: '';
+    position: absolute;
+    top: 20em;
+    left:10.5em;
+    width: 5px;
+    z-index: -999;
+    height: 1100px;
+    border-radius: 100px;
+    background-color: rgba(255,255,255,.5);
+}
+.box{
+    padding-left: 3em;
+    padding-right: 3em;
+    position: relative;
+    max-width: 1100px;
+    min-height: 120px;
+    top:3em;
+    left: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.mar-pic{
+    margin: 0 auto;
+    padding-left: 3em;
+    
+    position: relative;
+    max-width: 80%;
+    
+}
+.mar-pic img{
+    padding-left: 3em;
+    position: relative;
+    max-width: 80%;
+    top:13em;
+    z-index: 999;
+}
+.right{
+    
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    position: relative;
+    padding: 1em;
+    right:0em;
+    max-width: 850px;
+    border-radius: 15px;
+    text-align: left;
+    background-color: white;
+    color: rgb(0, 0, 0);
+     
+}
+@media screen and (max-width:1100px){
+        .right{
+            width:80%;
+            height:auto;
+        }
+}
+.part-title{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    position: relative;
+    
+    font-size: 20px;
+}
+.part-text{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    position: relative;
+
+    margin: 0 auto;
+    
+    font-size:16px;
+}
+.center{/*part文字*/
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    max-width: 150px;
+    display: flex;
+    
+   
+    padding-right: 4em;
+    align-items: center;
+}
+@media screen and (max-width:1100px){
+        .center span{
+            width: 90%;
+            height:auto;
+        }
+    }
+.center span{/*part的底*/
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    max-width: 120px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 800;
+    text-align:center;
+    font-size: 20px;
+    padding: 0.5em;
+    
+}
+@media screen and (max-width:740px){
+        .box{
+            padding:0;
+            display: inline;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 5em;
+            
+        }
+        .center{
+            width: 180px;
+            padding:0;
+            padding-left: 3em;
+            padding-bottom: 1em;
+            padding-top: 2em;
+        }
+        .right{
+            margin: 0 auto;
+        }
+        .link-right{
+            display: none;
+        }
+        
+}
+.bottom-more{
+    position: absolute;
+    color: brown;
+    background-color: white;
+    top: 105em;
+    left: 3em;
+    width: 1600px;
+    height:15em;
+    box-shadow: 10px 0 25px 5px rgba(255, 255, 255, 0.582);
+}
+
+
+@media screen and (max-width:740px){
+    .bottom-more{
+        top:128em;
+    }
+}
+@media screen and (max-width:587px){
+    .bottom-more{
+        top:138em;
+    } 
+}
+
+/*------------------bio--------------------*/
+
+.about-bio{/*about图片*/
+    position: relative;
+    bottom: 5em;
+    max-width: 630px;
+}
+
+
+.bio{/*bio页面的内容div*/
+    left: 1%;
+    position:relative;
+    top: 13em;
+    max-width: 1300px;
+    max-height: 650px;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+.intro-a{
+
+    padding-left: 3em;
+    padding-right:0;
+}
+.intro-all{/*文字部分的全部div*/
+    
+    position: relative;
+    padding:2em;
+    bottom:10em;
+    max-width: 750px;
+    max-height: auto;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 8px 10px 2px rgb(255, 191, 191);
+}
+
+.bio-intro{/*大标题div*/
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    position: relative;
+    font-size: 50px;
+    
+}
+.name{/*小标题div*/
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    position: relative;
+    font-size: 20px;
+    padding-top:0.5em;
+    
+}
+.story{/*介绍div*/
+    font-size: 16px;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    position: relative;
+    
+    padding-top:1em;
+}
+.stand-pic{/*立绘*/
+    position: relative;
+    
+    bottom:45em;
+    display: block;
+    left: 70%;
+    max-width:260px;
+    transition:All 0.4s ease-in-out;
+}
+
+.stand-pic img{
+    position: relative;
+    margin:0 auto;
+
+}
+@media screen and (max-width:900px){
+    .intro-all{
+        width:80%;
+        height: auto;
+    }
+}
+@media screen and (max-width:500px){
+    .intro-all{
+        width:80%;
+        height: auto;
+    }
+    .stand-pic{
+        left: 60%;
+    }
+    .about-bio{
+        bottom:6em;
+    }
+}
+.stand-pic img:hover{
+    position: relative;
+    margin:0 auto;
+}
+.stand-pic:hover{
+    position: relative;
+    bottom:45.5em;
+    display: block;
+    left:70%;
+    max-width: 270px;
+    transition:All 0.4s ease-in-out;
+}
+
+.bottom-inc-bio{/*bio页底部版权*/
+    position: relative;
+    background-color: brown;
+    color: white;
+    height:15em;
+    top:15em;
+    box-shadow: 10px 0 25px 5px rgba(227, 52, 52, 0.544);
+}
