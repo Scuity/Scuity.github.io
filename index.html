@@ -12,7 +12,8 @@
             html{
                 overflow-x: hidden;
                 overflow-y: hidden;
-                
+                width:auto;
+                height: auto;
             }
             body{
               background-color: brown;
@@ -53,8 +54,8 @@
             .kai{
                 position:fixed;
                 z-index: 999;
-                left:85%;
-                top: 1.5em;
+                left:70%;
+                top: 1em;
                 height:2em;
                 width:2em;
                 border: none;
@@ -65,7 +66,7 @@
                 display: none;
                 transition: 0.5s;
                 margin: 0 auto;
-                background-color: rgb(25, 39, 133);
+                background-color: rgb(255, 255, 255);
                 
             }
             
@@ -123,16 +124,17 @@
             
             .beijing
             {  
+                top:50%;
                 
-                transform: translateX(50%);
-                transform: translateY(50%);
             } 
             video{    
               
                 min-width: 95%;  
                 min-height: 95%; 
                 width: 100%; 
-                z-index:1
+                z-index:1;
+                transform: translateX(50%);
+                transform: translateY(50%);
             }  
             source/*源文件*/
             {  
@@ -146,7 +148,7 @@
                   position: relative;
                   background-color: brown;
                   color: white;
-                  bottom:10em;
+                  top: 80%;
                   height:30%;
                   box-shadow: 10em 0 25em 5em rgba(227, 52, 52, 0.544);
                   z-index: -1;
