@@ -330,10 +330,10 @@
       <nav aria-label="Page navigation example">
         <div class="isssd">
           <ul class="pagination justify-content-center">
-            <li class="page-item"><a class="page-link" href="#"><</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">></a></li>
+            <li class="page-item "><a class="page-link"  ><</a></li>
+            <li class="page-item "><a class="page-link"  >1</a></li>
+            <li class="page-item "><a class="page-link"  >2</a></li>
+            <li class="page-item "><a class="page-link" >></a></li>
           </ul>
         </div>
       </nav>
@@ -345,7 +345,7 @@
     <div class="bottom-inc">
       
       <h6 class="inc">© FengFeng,TEAM 2-ES</h6>
-    
+      <button class="ttop" href="#" type="button" id="gotop">TOP</button>
       
     </div>
 
@@ -441,6 +441,23 @@
           }
           changeAll()
       }
+
+            //------导航栏---------
+            const kainav = document.querySelector(".kai");
+            // 获取导航菜单
+            const navMenu = document.querySelector(".nav");
+            
+            //获取菜单项
+            const navMenuItems = document.querySelectorAll(".nav li");
+        
+            //注册监听
+            kainav.addEventListener("click", () => {
+                
+                // 汉堡按钮
+                kainav.classList.toggle("active");
+                // 导航菜单开关
+                navMenu.classList.toggle("open");  
+            })
     </script>   
   </body>
 </html>
