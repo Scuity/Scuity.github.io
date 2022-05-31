@@ -12,11 +12,13 @@ html{
 }
 
 /*------导航栏---------------------------------------*/
+
+
 .none{
     position: fixed;
     background-color: rgb(255, 255, 255);
-    height:7em;
-    box-shadow: 0 0 10px 5px #fff;
+    height:16%;
+    box-shadow: 0 0 1em 1em #fff;
     z-index: 2;
 }
 ul.nav{
@@ -41,35 +43,36 @@ a{
     transition:All 0.4s ease-in-out;
 }
 .nav-move:hover{
-    transform: translate(0,-10px);
+    transform: translate(0,-1em);
 }
 
 .kai{
     position:fixed;
     z-index: 999;
-    left:85%;
-    top: 35px;
-    height: 40px;
-    width:40px;
+    left:70%;
+    top: 1em;
+    height:2em;
+    width:2em;
     border: none;
-    border-radius: 5px;
-    font-size: 25px;
-    font-weight: 500;
-    color: white;
+    border-radius: 0.3em;
+    font-size: 2em;
+    font-weight: 1000;
+    color: brown;
     display: none;
     transition: 0.5s;
-    background-color: brown;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
     
 }
 
 @media screen and (max-width:1100px) {
     ul.nav{
         background-color: rgba(255, 255, 255, 0.658);
-        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.658);
-        height: auto;
+        box-shadow: 0 0 1em 1em rgba(255, 255, 255, 0.658);
+        height: 65%;
         width: 1000px;
         margin: 0 auto;
-        top: 102px;
+        top: 7.5em;
         left: 0;
         text-align: center;
         position: relative;
@@ -95,8 +98,26 @@ a{
     .kai{
         display: block;
     }
+    
+    
     }
 /*------logo-------------------------------------------*/
+.top-logo img 
+{
+    position:fixed;
+    width: 40%; /*图片缩放*/
+    
+}
+
+@media screen and (max-width:1200px){
+    .top-logo img 
+    {
+    position:fixed;
+    width: 15em;
+    padding-top: 1.5em;
+ }
+}
+
 .news-logo img 
 {
     position:relative;
@@ -114,6 +135,47 @@ a{
     padding-top: 0.5em;
     }
 }
+/*------视频-------*/
+
+.beijing
+{  
+    top:50%;
+    
+} 
+video{    
+
+    min-width: 95%;  
+    min-height: 95%; 
+    width: 100%; 
+    z-index:1;
+    
+}  
+source/*源文件*/
+{  
+    min-width: 95%;  
+    min-height: 95%;  
+    height: auto;  
+    width: auto;  
+}
+ /*底部版权色*/
+  .bottom-inc{
+    
+      position: relative;
+      background-color: brown;
+      color: white;
+      bottom: 21%;
+      height:30%;
+      box-shadow: 10em 0 25em 5em rgba(227, 52, 52, 0.544);
+      z-index: -1;
+  }
+  .inc{
+      font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+      letter-spacing:0.2em;
+      position: relative;
+      text-align: center;
+      font-size: smaller;
+      top: 7.5em;
+  }
 
  /*--------contact-------------------------------------------*/
  .all-contact{
@@ -915,4 +977,185 @@ text-align: justify;
             width: 350px;
             text-align: center;
         }
+}
+
+/*----------------------news 跳转-------------------------------*/
+.cai{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+}
+.all-news{
+    position: relative;
+    padding-top:4em ;
+    top: 2em;
+    padding: 2em;
+    width: 1100px;
+    height: 1400px;
+    width: 100%;
+    height: auto;
+    border-radius: 40px;/*圆角*/
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 20px 5px rgb(255, 191, 191);
+}
+.news-title{
+    position: relative;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    text-align: center;
+    font-size: 2em;
+    padding-bottom:-1em;
+    
+}
+.news-svg{
+    position: relative;
+    top: 18%;
+    width: 40%;
+    left: 58%;
+}
+.dayss{/*日期*/
+    position: relative;
+
+    left: 13em;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    width: 8em;
+    height: 2em;
+    line-height: 2em;
+    border: none;
+    background-color: rgb(227, 52, 52);
+    box-shadow: 0 15px 20px 5px rgb(255, 191, 191);
+    width: 8em;
+    height: 2em;
+    border-radius: 100px;/*圆角*/
+}
+.ddaayy{
+    position: relative;
+    top: 0.35em;
+}
+
+.cai{
+
+    position: relative;
+    text-align: center;
+}
+
+.news-pic-memo{/*图片*/
+    position: relative;
+    max-width: 900px;
+    max-height:500px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+    justify-content: center;
+    border-radius: 20px;/*圆角*/
+}
+.news-pic-memo img{
+    position: relative;
+    border-radius: 100px;/*圆角*/
+    max-width: 900px;
+    max-height:500px;
+    
+
+}
+.ipcs img{
+    
+    position: relative;
+    max-width: 900px;
+    max-height:500px;
+    background-color:antiquewhite;
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:1000px){
+    .news-pic-memo img{
+        width: 20%;
+        height: auto;
+    }
+    .memo{
+        width: auto;
+        font-size: 0.6em;
+    }
+    .all-news{
+        position: relative;
+        top: 4em;
+    }
+    .news-svg{
+        position: relative;
+        top: 18%;
+        width: 80%;
+        left: 10%;
+    }
+    
+}
+@media screen and (max-width:502){
+    .news-pic-memo img{
+    
+        width: 80%;
+        height: auto;
+    }
+    .news-title{
+        font-size: 20px;
+    }
+    
+}
+
+.news-text-memo{/*文字*/
+    margin: 0 auto;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    height: auto;
+    position: relative;
+    padding: 3em;
+    font-size: medium;
+    text-align: center;
+}
+.bottom-inc-news{
+    position: relative;
+    background-color: brown;
+    color: white;
+    height:15em;
+    top: 10em;
+    box-shadow: 10px 0 25px 5px rgba(227, 52, 52, 0.544);
+}
+
+.bibi{
+    top:7em;
+    position: relative;
+    text-align: center;
+}
+.back-to-news{/*返回按钮*/
+    position: flex;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: rgb(227, 52, 52);
+    box-shadow: 0 15px 20px 5px rgb(255, 191, 191);
+    width: 8em;
+    height: 2em;
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+}
+.back-to-news:hover{
+    position: relative;
+  
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: rgb(227, 52, 52);
+    box-shadow: 0 8px 8px 2px rgb(255, 191, 191);
+    width: 8em;
+    height: 2em;
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
 }
