@@ -53,7 +53,7 @@ html{
     position:relative;
     left: 2em;
     top: 2em;
-    width: 30%; /*图片缩放*/
+    width: 30%; /*图片缩放
     height: 30%;
 }
 
@@ -61,7 +61,7 @@ html{
 {
     position:relative;
     left: 2em;
-    width: 20%; /*图片缩放*/
+    width: 20%; /*图片缩放
     height: 20%;
 }
 /*logo图片悬停上移
@@ -296,14 +296,14 @@ source/*源文件
 }
 
 
-/*-------biographt------*/
-.about{/*about图片*/
+/*-------biographt------
+.about{/*about图片
     position: relative;
     bottom: 5em;
     width: 50%;
 }
 
-.bio{/*bio页面的内容div*/
+.bio{/*bio页面的内容div
     position:relative;
     top: 13em;
     width: 1300px;
@@ -311,7 +311,7 @@ source/*源文件
     margin: 0 auto;
     border-radius: 40px;
 }
-.intro-all{/*文字部分的全部div*/
+.intro-all{/*文字部分的全部div
     position: relative;
     bottom:10em;
     left: 5em;
@@ -321,29 +321,28 @@ source/*源文件
     border-radius: 40px;
     box-shadow: 0 8px 10px 2px rgb(255, 191, 191);
 }
-
-.bio-intro{/*大标题div*/
+.bio-intro{/*大标题div
     font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
     position: relative;
     font-size: 50px;
     left: 0.75em;
     top: 0.8em;
 }
-.name{/*小标题div*/
+.name{/*小标题div
     font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
     position: relative;
     font-size: 20px;
     top:2em;
     left:2em;
 }
-.story{/*介绍div*/
+.story{/*介绍div
     font-size: 16px;
     font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
     position: relative;
     left: 2.5em;
     top:4em;
 }
-.stand-pic{/*立绘*/
+.stand-pic{/*立绘
     position: relative;
     bottom:45em;
     display: block;
@@ -370,14 +369,14 @@ source/*源文件
     transition:All 0.4s ease-in-out;
 }
 
-.bottom-inc-bio{/*bio页底部版权*/
+.bottom-inc-bio{/*bio页底部版权
     position: relative;
     background-color: brown;
     color: white;
     height:15em;
     top:15em;
     box-shadow: 10px 0 25px 5px rgba(227, 52, 52, 0.544);
-}
+}*/
 
 /*-------contact---------*/
 /*.all-contact{
