@@ -7,7 +7,7 @@
       <!-- Bootstrap -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="animate.css">
-      <link rel="stylesheet" href="work.css">
+      <link rel="stylesheet" href="gai.css">
       <script src="work.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
@@ -115,6 +115,81 @@
             background-color: brown;
         }
 
+        .news-text{
+            position: relative;
+            margin: 0 auto;
+            top: 42em;
+        }
+        .news-pic{
+            position: relative;
+            left: 5em;
+            width: 350px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px 5px rgb(226, 226, 226);
+
+        }
+        .days{
+            font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+            position: relative;
+            left: 38.5em;
+            bottom: 4em;
+            font-size: 16px;
+            color: white;
+            width: auto;
+            height: auto;
+            border: none;
+            background-color: rgb(227, 52, 52);
+            box-shadow: 0 15px 20px 5px rgb(255, 191, 191);
+            width: 8em;
+            height: 2em;
+            border-radius: 100px;
+          }
+        .neirong{
+            font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+            font-size: 26px;
+            position: relative;
+            left:5em;
+            top: 1em;
+            border: none;
+            background-color: white;
+            box-shadow: 0 10px 20px 15px rgb(226, 226, 226);
+            width: 26.5em;
+            height: 4em;
+            border-radius: 10px;
+            transition:All 0.6s ease-in-out;
+        }
+        .neirong:hover{
+            font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+            font-size: 26px;
+            position: relative;
+            left:5em;
+            top: 1em;
+            border: none;
+            background-color: white;
+            box-shadow: 0 10px 8px 2px rgb(226, 226, 226);
+            width: 26.5em;
+            height: 4em;
+            border-radius: 10px;/
+            transition:All 0.6s ease-in-out;
+        }
+        
+        .bottom-inc{
+            position: relative;
+            background-color: brown;
+            color: white;
+            top:50em;
+            height:15em;
+            box-shadow: 10px 0 25px 5px rgba(227, 52, 52, 0.544);
+            
+        }
+        .inc{
+            letter-spacing:1px;
+            position: relative;
+            text-align: center;
+            font-size: smaller;
+            top: 7.5em;
+        }
         
       </style>
     </head>
@@ -126,53 +201,54 @@
         new WOW().init();
     </script>
 
-    <!-- logo -->
-    <div class="news-logo fixed-top">  
-      <img class="move" src="pc/logo.png">
+   <!-- logo -->
+   <div class="news-logo fixed-top">  
+    <img class="move" src="pc/logo.png">
     </div>
-      
+    
     <!-- 导航栏 -->
-    <div class="none fixed-top"></div>
-    <div class="daohang fixed-top">
-      <nav class="navbar justify-content-end fixed-top"><!-- 右对齐 -->
-        <ul class="nav">
-          <div class="nav-move">
-            <li class="nav-item">
-            <a class="nav-link active" href="index.html">TOPS</a>
-            </li>
-          </div>
+    <div class="none fixed-top"> </div>
+    <div class="daohang fixed-top"> 
+        <nav class="navbar justify-content-end fixed-top"><!-- 右对齐 -->
+            <button class="kai" type="button"  >☰</button>
+            <ul class="nav" id="nav">
+                <div class="nav-move">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">TOPS</a>
+                    </li>
+                </div>
 
-          <div class="nav-move">
-            <li class="nav-item">
-            <a class="nav-link" href="news.html">NEWS</a>
-            </li>
-          </div>
+                <div class="nav-move">
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">NEWS</a>
+                    </li>
+                </div>
 
-          <div class="nav-move">
-            <li class="nav-item">
-            <a class="nav-link" href="biography.html">BIOGRAPHY</a>
-            </li>
-          </div>
+                <div class="nav-move">
+                    <li class="nav-item">
+                        <a class="nav-link" href="biography.html">BIOGRAPHY</a>
+                    </li>
+                </div>
 
-          <div class="nav-move">
-            <li class="nav-item">
-            <a class="nav-link" href="more.html">MORE</a>
-            </li>
-          </div>
+                <div class="nav-move">
+                    <li class="nav-item">
+                        <a class="nav-link" href="more.html">MORE</a>
+                    </li>
+                </div>
 
-          <div class="nav-move">
-            <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-            </li>
-          </div>
-                
-          <div class="nav-move">
-            <li class="nav-item">
-            <a class="nav-link" href="others.html">OTHERS</a>
-            </li>
-          </div>
-        </ul>
-      </nav>
+                <div class="nav-move">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </div>
+                        
+                <div class="nav-move">
+                    <li class="nav-item">
+                        <a class="nav-link" href="others.html">OTHERS</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
     </div>
 
     <!-- 轮播图 -->
