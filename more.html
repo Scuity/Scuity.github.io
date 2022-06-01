@@ -24,6 +24,31 @@
                 padding: 0;
                 margin: 0;
             }
+
+        
+        .bottom-more{
+            position: absolute;
+            color: brown;
+            background-color: white;
+            top: 105em;
+
+            width: 2000px;
+            height:15em;
+            box-shadow: 10px 0 25px 5px rgba(255, 255, 255, 0.582);
+        }
+
+        @media screen and (max-width:740px){
+        .bottom-more{
+            top:128em;
+        }
+        }
+        @media screen and (max-width:587px){
+        .bottom-more{
+            top:138em;
+        } 
+        }
+
+       
         </style>
         
     </head>
@@ -153,11 +178,16 @@
                     </div>
                 </div>
 
+                <footer>
+                    <div class="bottom-more ">
+                        
+                    </div>
+                </footer>
+                
+
             
             </div>
-            <footer>
-                <div class="bottom-more"></div>
-            </footer>
+            
             <script>
                 //------导航栏---------
                 const kainav = document.querySelector(".kai");
