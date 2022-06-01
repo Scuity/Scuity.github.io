@@ -561,6 +561,7 @@ a{
 
 /*-----------------版权-----------------------*/
 .bottom-inc-con{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
     position: relative;
     background-color: brown;
     color: white;
@@ -569,6 +570,7 @@ a{
     box-shadow: 10px 0 25px 5px rgba(227, 52, 52, 0.544);
 }
 .inc{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
     letter-spacing:1px;
     position: relative;
     text-align: center;
@@ -820,6 +822,7 @@ a{
     text-align: center;
 }
 .bottom-inc-news{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
     position: relative;
     background-color: brown;
     color: white;
@@ -970,6 +973,7 @@ a{
 
 .bottom-inc-bio{/*bio页底部版权*/
     position: relative;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
     background-color: brown;
     color: white;
     height:15em;
