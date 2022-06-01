@@ -14,7 +14,7 @@
                 overflow-x: hidden;
                 overflow-y: hidden;
                 width:auto;
-                height: auto;
+                
             }
             * {
                 padding: 0;
@@ -129,11 +129,7 @@
             }
             /*------视频-------*/
             
-            .beijing
-            {  
-                top:50%;
-                
-            } 
+            
             video{    
                
                 min-width: 95%;  
@@ -161,16 +157,25 @@
                 z-index:1;
                 } 
             }
+            @media screen and (max-width:1000px){
+                video{    
+                position: fixed;
+                width: 100%; 
+                z-index:1;
+                } 
+                
+                    
+                
+            }
                 
             
              /*底部版权色*/
               .bottom-inc{
-                
                   position: relative;
                   background-color: brown;
                   color: white;
-                  bottom: 21%;
-                  height:30%;
+                  
+                  height:15em;
                   box-shadow: 10em 0 25em 5em rgba(227, 52, 52, 0.544);
                   z-index: -1;
               }
