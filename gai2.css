@@ -302,3 +302,308 @@ a{
             top:138em;
         } 
     }
+/*--------contact-------------------------------------------*/
+.all-contact{
+    padding-top: 12em;
+}
+
+.contact-img{
+    position: relative;
+    z-index: -1;
+    bottom: 4em;
+    left:8%;
+    width: 43%;
+    height: auto;
+    min-width: 370px;
+    min-height: auto;
+}
+@media screen and (max-width:1200px){
+        .enter-text{
+            position: relative;
+            width: 80%;
+            min-height: auto;
+        }
+}
+.enter-text{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    max-width: 1100px;
+    max-height: 690px;
+    bottom:8em;
+    margin: 0 auto;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 15px 20px 5px rgb(255, 191, 191);
+}
+
+.from-check{
+    position: relative;
+    padding-left: 7%;
+}
+.id-title{
+    font-size: 25px;
+}
+
+.inquiry-details{
+    top:0.5em;
+    position: relative;
+    padding-left: 6.2em;
+    padding-top:3em;
+    padding-bottom: 10px;
+}
+.enter-name,.enter-email
+{
+    font-size: 25px;
+    width: 30em;
+    padding-left: 4em;
+    padding-top:0.5em; 
+}
+.enter-subject{
+    font-size: 25px;
+    width: 30em;
+    padding-left: 4em;
+    bottom:0.5em;
+}
+.enter-detail{
+    font-size: 25px;
+    width: 40em;
+    bottom:1em;
+    height: auto;
+    padding-left: 4em;
+    padding-top:0.5em;
+    padding-bottom: 7%;   
+    
+}
+@media screen and (max-width:1200px){
+            .enter-text{
+                position: relative;
+                bottom:6.5em;
+            }
+            .enter-name,.enter-email,.enter-subject,.enter-detail{
+                width: 80%;
+                min-height: auto;
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .id-title{
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .inquiry-details{
+                font-size: 95%;
+            }
+}
+@media screen and (max-width:700px){
+    .enter-text{
+                position: relative;
+                bottom:6em;
+            }
+            .enter-name,.enter-email,.enter-subject,.enter-detail{
+                width: 80%;
+                min-height: auto;
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .id-title{
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .inquiry-details{
+                font-size: 95%;
+            }
+            .enter-name,.enter-email,.enter-subject,.enter-detail{
+                position: relative;
+                padding-left: 10%;
+                padding-top:2%;
+            }
+            .inquiry-details{
+                position: relative;
+                padding-left: 10%;
+                padding-top:8%;
+            }
+}
+
+.form-control{
+    background-color: rgba(219, 219, 219, 0.66);
+    border: none;
+    color: rgba(0, 0, 0, 0.718);
+}
+.form-control placeholder{
+    background-color: rgba(219, 219, 219, 0.66);
+    border: none;
+    color: rgba(165, 165, 165, 0.718);
+}
+.form-control:focus{
+    background-color: rgba(255, 255, 255, 0.66);
+    border: none;
+    box-shadow: 0 0px 2px 3px rgb(227, 52, 52);
+    color: rgba(0, 0, 0, 0.718);
+}
+
+.con-intro{
+    position: relative;
+    bottom: 3em;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: brown;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    text-align: center;
+}
+/*-----------------send-----------------------*/
+.send-center{
+    text-align: center;
+    position: relative;
+    bottom: 1em;
+}
+.con-send,.con-send:focus{
+    position: relative;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: rgb(227, 52, 52);
+    box-shadow: 0 15px 20px 5px rgb(255, 191, 191);
+    width: 8em;
+    height: 2em;
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+}
+.con-send:hover{
+    position: relative;
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: rgb(227, 52, 52);
+    box-shadow: 0 8px 8px 2px rgb(255, 191, 191);
+    width: 8em;
+    height: 2em;
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+}
+/*-----------------跳转send----------------------*/
+.btn-understood{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    width: 8em;
+    height: 2em;
+    background-color: rgb(227, 52, 52);
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+    border: none;
+}
+.btn-understood:hover{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    width: 8em;
+    height: 2em;
+    background-color: brown;
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+    border: none;
+}
+.btn-con-close{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    width: 5em;
+    height: 2em;
+    background-color: rgb(153, 153, 153);
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+    border: none;
+}
+.btn-con-close:hover{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    width: 5em;
+    height: 2em;
+    background-color: rgb(112, 112, 112);
+    border-radius: 100px;/*圆角*/
+    transition:All 0.4s ease-in-out;
+    border: none;
+}
+.modal-body{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1'
+}
+
+.form-check-input:checked{
+    background-color: rgb(227, 52, 52);
+    border: none;
+}
+.form-check-input:focus{
+    background-color: rgb(227, 52, 52);
+    border: none;
+    box-shadow: 0 0px 0px 3px rgb(255, 191, 191);
+}
+.form-check-input:checked{
+    background-color: rgb(227, 52, 52);
+    border: none;
+}
+.form-check-input:focus{
+    background-color: rgb(227, 52, 52);
+    border: none;
+    box-shadow: 0 0px 0px 3px rgb(255, 191, 191);
+}
+
+/*-----------------版权-----------------------*/
+.bottom-inc-con{
+    position: relative;
+    background-color: brown;
+    color: white;
+    height:15em;
+    top:8em;
+    box-shadow: 10px 0 25px 5px rgba(227, 52, 52, 0.544);
+}
+.inc{
+    letter-spacing:1px;
+    position: relative;
+    text-align: center;
+    font-size: smaller;
+    top: 7.5em;
+}
+
+/*------------------返回顶部--------------------*/
+.ttop{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    position: relative;
+    height: 70px;
+    width: 70px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    left: 88%;
+    top:1em;
+    color: brown;
+    background-color: white;
+}
+@media screen and (max-width:700px){
+    .ttop{
+        left: 80%;
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.ttop-more{
+    font-family: 'ZhanKuKuaiLeTi2016XiuDingBan-1';
+    position: relative;
+    height: 70px;
+    width: 70px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    left: 88%;
+    top:1em;
+    color: white;
+    background-color: brown;
+}
+@media screen and (max-width:700px){
+    .ttop-more{
+        left: 88%;
+        height: 60px;
+        width: 60px;
+    }
+}
