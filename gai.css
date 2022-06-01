@@ -908,12 +908,12 @@ visibility: visible;
 .card-ots .card-t .card-all{
 text-align: justify; 
 }
-.bottom-inc-ots{/*bio页底部版权*/
+.bottom-inc-ots{/*ots页底部版权*/
     position: relative;
     background-color: brown;
     color: white;
     height:15em;
-    top:17em;
+    top: 15em;
     box-shadow: 10px 0 25px 5px rgba(227, 52, 52, 0.544);
 }
 .butt{
@@ -1010,6 +1010,10 @@ text-align: justify;
 }
 
 @media screen and (max-width:1000px){
+        body{
+            height:5450px;
+            overflow-y: hidden;
+        }
         .c-all{
 
             display: inline;
@@ -1039,6 +1043,8 @@ text-align: justify;
             width: 350px;
             text-align: center;
         }
+        
+       
 }
 
 /*----------------------news 跳转-------------------------------*/
