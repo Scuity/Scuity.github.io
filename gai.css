@@ -44,8 +44,12 @@ a{
 .nav-move:hover{
     transform: translate(0,-1em);
 }
-
+.kai-1{
+    text-align: center;
+    background-color: brown;
+}
 .kai{
+    text-align: center;
     position:fixed;
     z-index: 999;
     left:80%;
